@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+  .main-box{
+    width: 200px;
+    border: 1px solid black;
+    position: relative;
+  }
+
+  .box-1{
+    background-image: url(img/wasa-crispbread-IgYBpcquAg4-unsplash.jpg);
+    background-size: cover;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-box:hover .box-1{
+    opacity: 0.7;
+  }
+
+  .box-icons{
+    transform: translateY(-30px);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    background-color: red;
+  }
+  
+  .main-box:hover .box-icons{
+    display: block;
+    
+  }
+
+  .main-box:hover .box-2{
+    display: block;
+  }
+
+  .box-2{
+    position: absolute;
+    display: none;
+  }
+ </style>
+
+</head>
+<body>
+    
+
+      <div style="position: relative; width: 200px;">
+        <div style="width: 15px; height: 15px; background-color: red; position: absolute; top: 50%; right: 15px; transform: translate(0, -50%);"></div>
+        <input type="text" style="width: 100%; height: 100px; padding-right: 30px;">
+      </div>
+
+
+      <div class="main-box">
+        <div class="box-1">
+         <p style="margin: 0;">Some demo text</p>
+         <div class="box-icons">Icons</div>
+         <p style="margin: 0;">Demo tex</p>
+
+
+        </div>
+
+
+        <div class="box-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptatem veritatis, facere quo laborum minima culpa sequi nesciunt possimus cumque?
+        </div>
+      </div>
+
+
+
+
+   
+</body>
+</html>
